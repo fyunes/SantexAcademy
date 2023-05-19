@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header-fixed">
+        <div id="header" class="header-style">
+            <div id="header-left">
+                <img src="img/logo.svg">
+            </div>
+            <div id="header-right">
+                <p>Nosotros</p>
+                <p>Programas</p>
+                <p>Capaciontaciones</p>
+                <p>Alianzas</p>
+                <p>Contacto</p>
+                <button class="redondo">Sumate +</button>
+            </div>
+        </div>
+    </div>
+    <div id="introduction" style="padding: 48px;">
+        <div id="introduction-text">
+            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la
+                tecnología.</h1>
+        </div>
+        <div id="introduction-actions" style="margin-top: 25px;">
+            <button class="redondo">Contactanos -></button>
+            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+        </div>
+    </div>
+
+
+
+    <!--
+    <div id="header" class="header-style">
         <div id="header-left">
             <img src="logo.svg">
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
+        <div id="header-right">
             <p>Nosotros</p>
             <p>Programas</p>
             <p>Capaciontaciones</p>
@@ -52,5 +65,279 @@
             <button class="redondo" style="margin-left: 14px;">Sumate +</button>
         </div>
     </div>
+-->
+    <!--contador-->
+    <div id="impact-style">
+        <div id="text-style">
+            <div id="impact">
+                <h2>.Impacto</h2>
+                <p>Buscamos construir alianzas y fortalecer vínculos <br> para generar una transformación real en la
+                    comunidad. <br> Trabajamos para acercar la tecnología innovadora y <br> disruptiva del sector
+                    privado hacia el sector social.</p>
+            </div>
+            <div id="boxes">
+                <div class="box-container">
+                    <div id="box1">
+                        <span>58</span>
+                        <div class="text-box">Localidades</div>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div id="box2">50</div>
+                    <div class="text-box">Mentores</div>
+                </div>
+                <div class="box-container">
+                    <div id="box3">301</span></div>
+                    <div class="text-box">Participantes</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--foto de fondo-->
+    <div id="style-photo">
+        <img width="100%" src="img/twp-home.jpg" alt="foto graduados">
+    </div>
+    <!--caja .programas-->
+    <div class="font-style">
+        <div>
+            <h2 id="text-programs">.Programas</h2>
+        </div>
+    </div>
+    <div>
+        <div class="style-book">
+            <div>
+                <div class="photo-style">
+                    <img height="400" src="img/xacademy-01-1200x800.jpg" alt="foto alumnos sonriendo">
+                </div>
+            </div>
+            <div id="box-style2">
+                <div>
+                    <img width="200" height="77" src="img/xacademy.svg" alt="logo-xacademy-">
+                </div>
+                <div class="text-style-paragraph">
+                    <p>xAcademy es un programa de formación en tecnología llevado adelante por la Fundación Tecnología
+                        con Propósito junto a Santex que busca promover un cambio positivo en la comunidad a través de
+                        la educación en IT, apuntando a lograr la inserción laboral de personas en el mundo tecnológico.
+                    </p>
+                </div>
+                <div>
+                    <button class="redondo">Mas info -></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--caja robotica educativa-->
+    <div>
+        <div class="flex-robot">
+            <div id="box-1-robot">
+                <div id="text-robot">
+                    <h4 font-size="20px">Robótica educativa: la tecnología del futuro</h4>
+                    <p>Durante el curso, los alumnos y alumnas a través de la robótica <br> desarrollan la curiosidad,
+                        el autodidactismo y las habilidades blandas necesarias para afrontar la revolución tecnológica
+                        del siglo XXI.</p>
+                </div>
+                <div style="padding-left: 80px" ;><button class="redondo">Mas info -></button></div>
+            </div>
+            <div id="box-2-robot" class="photo-style">
+                <img height="400" src="img/robotica-educativa-07-1200x800.jpg" alt="foto de niños aprendiendo robotica">
+            </div>
+
+        </div>
+    </div>
+    <!--capacitaciones-->
+    <div>
+        <div>
+            <div class="font-style">
+                <h2 style="margin-left: 45px; margin-top: -20px; margin-bottom: -20px">.Capacitaciones</h2>
+            </div>
+        </div>
+    </div>
+    <div class="box-style-estafas">
+        <div class="photo-style">
+            <img height="400" src="img/estafas-virtuales-04-1200x905.jpg" alt="clase de estafas virtuales">
+        </div>
+        <div>
+            <div id="text-estaf">
+                <div>
+                    <h4 font-size="20px">Estafas virtuales: ¿cómo protegernos?</h4>
+                </div>
+                <div>
+                    <p>Los canales de comunicación a través de medios digitales cobraron gran protagonismo a partir de
+                        la pandemia. Al mismo tiempo, se perfeccionan cada vez más rápido las modalidades de estafas y
+                        fraudes virtuales. En esta capacitación vas a aprender diferentes tips y consejos útiles para
+                        navegar de manera más segura.</p>
+                </div>
+                <div>
+                    <!--aca va el boton-->
+                    <button class="redondo">Mas info -></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--seguridad para las infancias-->
+    <div>
+        <div class="flex-robot">
+            <div id="box-1-robot">
+                <div id="text-robot">
+                    <h4 font-size="20px">Seguridad informática para infancias</h4>
+                    <p>¿Navegamos seguros en internet? La propuesta es una charla para niños y niñas donde se brindan
+                        herramientas de seguridad y autocuidado digital.</p>
+                </div>
+                <div style="padding-left: 80px" ;><button class="redondo">Mas info -></button></div>
+            </div>
+            <div id="box-2-robot" class="photo-style">
+                <img height="400" src="img/seguridad-informatica-para-infancias-1200x797.jpg"
+                    alt="foto de niño tecleando">
+            </div>
+
+        </div>
+    </div>
+    <!--aca van la cajitas con los perfiles-->
+    <div style="background-color:#d9d9d9;">
+        <div>
+            <h2 class="text-style-paragraph" id="det-par">.Equipo</h2>
+        </div>
+        <div class="flex-perfiles">
+            <div id="box-perfil-1" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-juan.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Juan Santigo</h5>
+                    <p class="text-box-paragraph">Presidente</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="linkedin-logo"></a>
+                </div>
+
+            </div>
+            <div id="box-perfil-2" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-walter-400x296.png" alt="foto Juan Santiago">
+                </div>
+                <!--falta agregar los links de los linkedin-->
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Walter Abrigo</h5>
+                    <p class="text-box-paragraph">Secretario</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="linkedin logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-3" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-gabriela.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Gabriela Fernandez</h5>
+                    <p class="text-box-paragraph">Comisión Directiva</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-4" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-gabriel.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Gabriel Dubini</h5>
+                    <p class="text-box-paragraph">Tesorero</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-5" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-florencia.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Florencia D'Agostino</h5>
+                    <p class="text-box-paragraph">Dirección ejecutiva</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-6" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-celeste.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Celeste Torresi</h5>
+                    <p class="text-box-paragraph">Comisión Directiva</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-7" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/twp-lucia.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Lucía Jaimez</h5>
+                    <p class="text-box-paragraph">Directora Academy</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-8" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/agustin-chino.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Agustin Chino</h5>
+                    <p class="text-box-paragraph">Coord. Área Inclusión Social</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+            <div id="box-perfil-9" class="style-perfil">
+                <div>
+                    <img class="style-photo-perfil" src="img/enzo-dotto.png" alt="foto Juan Santiago">
+                </div>
+                <div class="style-box-data text-style-paragraph">
+                    <h5 style="font-size: 18px; padding-top: 18px;">Enzo Dotto</h5>
+                    <p class="text-box-paragraph">Relaciones Institucionales</p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank"
+                        rel="instagram-link"><img src="img/linkedin-square-logo-24.png" alt="instagram-logo"></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer id="style-back">
+        <div class="footer-logo">
+            <div id="logo-white">
+                <img decoding="async" width="177" height="51" title="Technology with Purpose"
+                    src="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose-white.svg"
+                    alt="" class="img-white-logo">
+            </div>
+            <div id="style-paragraph">
+                <p>Trabajamos para acercar la tecnología innovadora <br> y disruptiva del sector
+                    privado <br> hacia el sector social</p>
+            </div>
+            <div>
+                <p>NOSOTROS CONTACTO</p>
+            </div>
+            <div>
+                <p>PROGRAMAS CAPACITACIONES</p>
+            </div>
+            <div>
+                <p>
+                    <img src="img/instagram-logo-24.png" alt="">
+                    <a href="https://www.instagram.com/technologywithpurpose/" target="_blank"
+                        rel="noopener">INSTAGRAM</a><br>
+                </p>
+                <p>
+                    <img src="img/linkedin-logo-24.png" alt="">
+                    <a class="style-link" href="https://www.linkedin.com/company/technologywithpurpose/" target="_blank"
+                        rel="noopener"><i class="linkedin-in"></i> LINKEDIN</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
